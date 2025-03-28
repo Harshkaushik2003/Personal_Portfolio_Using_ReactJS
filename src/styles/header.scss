@@ -1,0 +1,121 @@
+@use "statics";
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: statics.$color1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 statics.$p;
+  position: sticky;
+  top: 0%;
+  z-index: 60;
+  > h2 {
+    font-size: 2rem;
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    a {
+      color: statics.$color6;
+      font-weight: 500;
+      transition: all 0.3s;
+      letter-spacing: 1px;
+      &:hover {
+        color: statics.$color3;
+      }
+    }
+  }
+
+  > a > button {
+    border: 1px solid statics.$color6_1;
+    padding: 0.5rem 2rem;
+    background-color: statics.$color1;
+    cursor: pointer;
+    color: statics.$color6;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all 0.3s;
+    &:hover {
+      background-color: statics.$color6;
+      color: statics.$color4;
+    }
+  }
+}
+
+.navBtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  color: statics.$color5;
+  font-size: 1.4rem;
+  z-index: 150;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+
+  &:hover {
+    color: statics.$color3;
+  }
+}
+
+.navPhone {
+  transition: all 0.5s;
+  transform: translateY(-200%);
+  width: 100%;
+  height: 100vh;
+  background-color: statics.$color5;
+  padding: statics.$p_base;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  > h2 {
+    font-size: 2rem;
+    color: statics.$color4;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+      color: statics.$color4;
+      letter-spacing: 1px;
+      font-weight: 500;
+      transition: all 0.3s;
+      &:hover {
+        color: statics.$color3;
+      }
+    }
+  }
+
+  > a > button {
+    border: 1px solid statics.$color6_1;
+    padding: 0.5rem 2rem;
+    background-color: statics.$color1;
+    cursor: pointer;
+    color: statics.$color6;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.5s;
+    &:hover {
+      background-color: statics.$color6;
+      color: statics.$color4;
+    }
+  }
+}
+
+.navPhoneComes {
+  transform: translateY(0);
+}

@@ -1,0 +1,49 @@
+// Import statics module (assuming statics.scss exists and defines $color1)
+@use "statics";
+@use "animations";
+@use "header";
+@use "home";
+@use "work";
+@use "timeline";
+@use "services";
+@use "testimonial";
+@use "contact";
+@use "footer";
+@use "mediaquery";
+
+@import // Import Google Fonts
+  url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+// Apply styles using the universal selector
+* {
+  margin: 0;
+  padding: 0; // Reset padding to 0
+  font-family: statics.$text2; // Use Open Sans as the default font
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Example of applying font styles to specific elements
+body {
+  background-color: statics.$color1;
+  overflow-x: hidden;
+}
+
+.disableBtn {
+  color: statics.$color6 !important;
+  background-color: rgb(237, 237, 237) !important;
+  cursor: not-allowed !important;
+}
+
+#customMessage {
+  font: 900 2rem statics.$text2;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
