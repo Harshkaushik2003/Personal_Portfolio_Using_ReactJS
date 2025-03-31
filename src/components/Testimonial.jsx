@@ -10,12 +10,12 @@ const Testimonial = () => {
           feedback={"You're a very quick learner."}
         />
         <TestimonialCard
-          name={"Aakash"}
+          name={"Nikhil"}
           feedback={"Wow what a portfolio, doesn't expected this much"}
         />
         <TestimonialCard
-          name={"Rajeev"}
-          feedback={"Amazing seems like you should be the CEO of Google"}
+          name={"Rishabh"}
+          feedback={"Amazing seems like you're a great coder"}
         />
       </section>
     </div>
